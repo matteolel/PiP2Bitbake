@@ -251,7 +251,7 @@ if __name__ == '__main__':
     if(detectedFiletype == 1 ):
         os.system('sudo tar -xzpf '+WORKING_FOLDER_NAME+'/'+filename+' -C '+WORKING_FOLDER_NAME)
     else:
-        os.system('unzip '+'WORKING_FOLDER_NAME/'+filename+' -d '+WORKING_FOLDER_NAME)
+        os.system('unzip '+WORKING_FOLDER_NAME+'/'+filename+' -d '+WORKING_FOLDER_NAME)
 
     # Check if the unpacking was successful
     if(os.path.isdir(WORKING_FOLDER_NAME+'/'+fileFolderName)):
